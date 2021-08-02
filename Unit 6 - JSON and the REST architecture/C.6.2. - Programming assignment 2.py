@@ -51,7 +51,7 @@ address_wanted = data_address
 
 #Setting the GET parameters on the URL
 parameters = {"sensor": "false", "address": address_wanted}
-paramsurl = urllib.urlencode(parameters)
+paramsurl = urllib.parse.urlencode(parameters)
 
 #Generating the complete URL. Printing it in order to check if it's correct.
 queryurl = serviceurl + paramsurl
